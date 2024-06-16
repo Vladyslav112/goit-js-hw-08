@@ -1,0 +1,29 @@
+.gallery {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  max-width: 50%;
+  margin: 0 auto;
+}
+.gallery-item {
+  overflow: hidden;
+  width: calc((100% - 3 * 24px) / 3);
+  margin-right: 24px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+.gallery-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
